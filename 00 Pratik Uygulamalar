@@ -1,0 +1,12 @@
+from selenium import webdriver
+import random
+import time
+
+driver =webdriver.Chrome(executable_path= r"C:\Users\mehmet\Desktop\chromedriver.exe")
+driver.get("Please insert link here")
+
+while True:
+    driver.refresh()
+    x = random.uniform(250,350)
+    time.sleep(x)
+    print(x)
